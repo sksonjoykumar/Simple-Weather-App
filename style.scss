@@ -1,0 +1,145 @@
+@import "./Another-style/index";
+
+body {
+  font-family: "Poppins", sans-serif;
+  //   height: 100vh;
+  // background: rgb(2, 0, 36);
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(2, 0, 36, 1) 0%,
+  //   rgba(9, 9, 121, 1) 35%,
+  //   rgba(6, 84, 170, 1) 60%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
+}
+
+.main-container {
+  width: 30%;
+  margin: 80px auto 0;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 37%,
+    rgba(148, 163, 233, 1) 100%
+  );
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 3px #ddd;
+  .search-section {
+    margin-top: 30px;
+    .input-section {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 17px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        transition: none;
+      }
+      input:focus {
+        outline: 2px solid #48a1ff;
+      }
+      button {
+        background-color: #ffffff;
+        padding: 10px 12px;
+        margin-left: 15px;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.4s;
+      }
+      button:hover {
+        background-color: rgb(238, 174, 202);
+        color: #ffffff;
+      }
+    }
+  }
+  .section-two {
+    margin: 20px 0;
+    display: none;
+    .image-container {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+    }
+    .data-container {
+      .temp-heading {
+        text-align: center;
+        margin-bottom: 20px;
+        h1 {
+          font-size: 5rem;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        h2 {
+          margin-top: -15px;
+          font-size: 2.6rem;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+      .humidity-container {
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .humidity {
+          .hum-chid {
+            display: flex;
+
+            img {
+              width: 2.5rem;
+              height: 2.5rem;
+              margin-top: 20px;
+            }
+            .data-title {
+              margin-left: 1.3rem;
+              h3 {
+                font-size: 2rem;
+                color: #ffffff;
+              }
+              p {
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        .wind {
+          .wind-chid {
+            display: flex;
+            img {
+              width: 2.7rem;
+              height: 3rem;
+              margin-top: 20px;
+            }
+            .wind-data-title {
+              margin-left: 1.3rem;
+              h3 {
+                font-size: 2rem;
+                color: #ffffff;
+              }
+              p {
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
